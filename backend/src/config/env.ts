@@ -6,7 +6,7 @@ dotenv.config()
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
   PORT: z.coerce.number().positive().default(4000),
-  MONGODB_URI: z.string().min(1)
+  MONGODB_URI: z.string().min(1),
 })
 
 export const env = envSchema.parse(process.env)

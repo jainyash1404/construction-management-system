@@ -15,7 +15,7 @@ app.use(express.json())
 app.get('/', (_req, res) => {
   res.json({
     name: 'construction-management-system-api',
-    status: 'ok'
+    status: 'ok',
   })
 })
 

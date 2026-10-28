@@ -4,7 +4,7 @@ const links = [
   { to: '/', label: 'Dashboard' },
   { to: '/workers', label: 'Workers' },
   { to: '/sites', label: 'Sites' },
-  { to: '/finance', label: 'Finance' }
+  { to: '/finance', label: 'Finance' },
 ]
 
 export const AppShell = () => {
@@ -15,7 +15,9 @@ export const AppShell = () => {
           <Link className="text-lg font-semibold text-slate-900" to="/">
             Construction Fund Manager
           </Link>
-          <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">Initial Setup</span>
+          <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600">
+            Initial Setup
+          </span>
         </div>
       </header>
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 py-6 sm:px-6 md:grid-cols-[220px_1fr]">
